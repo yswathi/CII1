@@ -1,0 +1,50 @@
+@import '../../../mixins';
+
+
+:host ::ng-deep .mat-tab-links {
+  margin-left: 24px !important;
+}
+
+.ims-dashboard {
+  margin-top: 15px;
+
+  a.disabled {
+    pointer-events: none;
+    cursor: no-drop !important;
+    font-weight: 500;
+  }
+
+  .mat-tab-link {
+    min-width: 20% !important;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    font-size: 16px;
+
+    &:first-child {
+      display: none;
+    }
+  }
+
+
+  a {
+    text-decoration: none;
+    font-size: $font-size4;
+    color: $heading-color;
+  }
+
+  a: active {
+    font-family: $font-family-openSans
+  }
+
+  .sub-content {
+    margin-top: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 68vh;
+    overflow: auto;
+  }
+
+  .mat-tab {
+    background-color: $color-black-two;
+  }
+}

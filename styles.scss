@@ -1,0 +1,308 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '../src/mixins.scss';
+@import '~ag-grid/dist/styles/ag-grid.css';
+@import '~ag-grid/dist/styles/ag-theme-balham.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "../node_modules/c3/c3.min.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'app/components/app/footer/footer.component.scss';
+@import '../src/common.scss';
+
+// .ims-dashboard-admin,.ims-dashboard-ppm,.ims-dashboard-kr{
+// .ag-layout-normal .ag-body-container {
+//   width : 1178px !important;
+// }
+// }
+
+.ims-dashboard-statistics .ag-body-container {
+  width: 1800px !important;            //style.scss
+}
+
+.mat-expansion-panel-body {
+  padding:  0 !important;
+}
+.ag-theme-balham .ag-header-cell::after, .ag-theme-balham .ag-header-group-cell::after{
+  border-right: none !important;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar
+{
+  background-color: $color-1 !important;
+}
+
+.ag-theme-balham .ag-header-cell, .ag-theme-balham .ag-header-group-cell{
+  padding-left : 22px !important;
+  color : $color-12 !important;
+}
+
+.mat-expansion-panel-header-description, .mat-expansion-panel-header-title {
+  font-size : 13px !important;
+  font-family:  $font-family_openBold !important;
+}
+.ag-theme-balham .ag-cell{
+  padding-left : 22px !important;
+  user-select: initial;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -webkit-user-select: text;
+}
+
+.mat-checkbox-layout .mat-checkbox-label {
+    margin-top: 0px !important;
+    margin-left : 6px !important;
+}
+.mat-dialog-actions {
+    display: block !important;
+}
+
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-backgroundmat-pseudo-checkbox-checked {
+    background-color: $color-1 !important;
+}
+
+.noborder {
+  border: none !important;
+}
+
+.a_grid {
+  color : $color-3 !important;
+}
+
+.form-control {
+  font-size : 12px;
+}
+
+button {
+  font-size : 13px !important;
+}
+
+.grid-icon {
+  font-size:20px;
+  color:$color-4;
+  padding-top:5px;
+}
+
+label {
+  font-size:  12px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-pointer:focus {
+  outline: none;
+}
+
+.curser-not-allowed{
+  cursor: not-allowed !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+.ims-text-right-fix{
+  text-align: left
+}
+html {
+  height: 100%;
+  overflow: hidden;
+  body {
+    height: 100%;
+    background-color: $color-black-three;
+    font-family:$font-family !important;
+  }
+}
+
+.marT30{
+  margin-top: 30px;
+}
+
+.mat-menu-content {
+  padding: 0;
+}
+
+.mat-dialog-content{
+  max-height : 70 !important;
+}
+
+@media (min-width: 768px) {
+  .ims-text-right-fix{
+    text-align: right
+  }
+}
+
+.heading1{
+  font-size:$font-size1;
+}
+.heading2{
+  font-size:$font-size2;
+}
+.heading3{
+  font-size:$font-size3;
+}
+.heading4{
+  font-size:$font-size4;
+}
+.heading5{
+  font-size:$font-size5;
+}
+.ims-color-1{
+  color: $color-1;
+}
+.ims-color-2{
+  color: $color-2;
+}
+.ims-color-3{
+  color: $color-3;
+}
+.ims-color-4{
+  color: $color-4;
+}
+.ims-color-5{
+  color: $color-5;
+}
+.ims-color-6{
+  color: $color-6;
+}
+.ims-color-7{
+  color: $color-7 !important;
+}
+.ims-color-8{
+  color: $color-8;
+}
+.ims-color-9{
+  color: $color-9;
+}
+.ims-color-10{
+  color: $color-10;
+}
+.ims-color-11{
+  color: $color-11;
+}
+.ims-color-12{
+  color: $color-12;
+}
+.ims-color-13{
+  color: $color-13;
+}
+.ims-color-14{
+  color: $color-14;
+}
+.ims-color-15{
+  color: $color-15;
+}
+.ims-color-16{
+  color: $color-16;
+}
+.ims-color-17{
+  color: $color-17;
+}
+.ims-color-18{
+  color: $color-18;
+}
+.ims-bgcolor-1{
+  background-color: $color-1 !important;
+}
+.ims-bgcolor-2{
+  background-color: $color-2;
+}
+.ims-bgcolor-3{
+  background-color: $color-3;
+}
+.ims-bgcolor-4{
+  background-color: $color-4;
+}
+.ims-bgcolor-5{
+  background-color: $color-5 !important;
+}
+.ims-bgcolor-6{
+  background-color: $color-6;
+}
+.ims-bgcolor-7{
+  background-color: $color-7;
+}
+.ims-bgcolor-8{
+  background-color: $color-8;
+}
+.ims-bgcolor-9{
+  background-color: $color-9;
+}
+.ims-bgcolor-10{
+  background-color: $color-10;
+}
+.ims-bgcolor-11{
+  background-color: $color-11;
+}
+.ims-bgcolor-12{
+  background-color: $color-12;
+}
+.ims-bgcolor-13{
+  background-color: $color-13;
+}
+.ims-bgcolor-14{
+  background-color: $color-14;
+}
+.ims-bgcolor-15{
+  background-color: $color-15;
+}
+.ims-bgcolor-16{
+  background-color: $color-16;
+}
+.ims-bgcolor-17{
+  background-color: $color-17;
+}
+.ims-bgcolor-18{
+  background-color: $color-18;
+}
+
+.ims-dashboard-statistics {
+  
+.mat-checkbox-inner-container {
+  margin-top: 9px !important;
+  width :17px !important;
+  height :17px !important;
+}
+
+.mat-checkbox-layout .mat-checkbox-label{
+  padding-top: 8px !important;
+  margin-left: 0px !important;
+  margin-right: 5px !important;
+}
+
+.selected-list .c-btn {
+  font-size:  12px;
+}
+
+.mat-form-field-label {
+  font-size:  12px !important;
+  padding-top : 10px !important;
+}
+}
+
+
+/*Added css */
+.mat-menu-panel{
+  margin-top:35px!important;
+  margin-right: -3px;
+
+ }
+ .mat-menu-content{
+   width:200px;
+   padding:0px!important;
+ }
+.item .hover{
+  background: none;
+}
+
+.mat-dialog-container {
+  height: auto !important;
+}
